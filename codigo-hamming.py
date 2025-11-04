@@ -30,12 +30,12 @@ if(len(lista_de_digitos) == 4):
     else:
         lista_de_digitos.insert(3, 0)
 elif(len(lista_de_digitos) == 5):
-    if( ((lista_de_digitos[0] + lista_de_digitos[1] + lista_de_digitos[3])%2) != 0):
+    if( ((lista_de_digitos[0] + lista_de_digitos[1] + lista_de_digitos[3] + lista_de_digitos[4])%2) != 0):
         lista_de_digitos.insert(0, 1)
     else:
         lista_de_digitos.insert(0, 0)
 
-    if( ((lista_de_digitos[1] + lista_de_digitos[3] + lista_de_digitos[4])%2) != 0):
+    if( ((lista_de_digitos[1] + lista_de_digitos[4] + lista_de_digitos[5])%2) != 0):
         lista_de_digitos.insert(1, 1)
     else:
         lista_de_digitos.insert(1, 0)
@@ -117,7 +117,7 @@ if(len(lista_de_digitos) == 7):
     if( ((lista_bits_recebida[3] + lista_bits_recebida[4] + lista_bits_recebida[5]+ lista_bits_recebida[6])%2) != 0):
         posicao += 4
 if(len(lista_de_digitos) == 9):
-    if( ((lista_bits_recebida[0] + lista_bits_recebida[2] + lista_bits_recebida[4] + lista_bits_recebida[6])%2) != 0):
+    if( ((lista_bits_recebida[0] + lista_bits_recebida[2] + lista_bits_recebida[4] + lista_bits_recebida[6] + lista_bits_recebida[8])%2) != 0):
         posicao += 1
 
     if( ((lista_bits_recebida[1] + lista_bits_recebida[2] + lista_bits_recebida[5] + lista_bits_recebida[6])%2) != 0):
